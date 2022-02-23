@@ -13,43 +13,16 @@
 | Version: Stata 16       	            					     |
 *----------------------------------------------------------------*/
 
-*DESCARGA DE DATOS ENAPRES. 
-*Autor: Andrés Talavera Cuya 
-*-------------------------------------------*
-
-** Descarga **
-
-clear all
-set more off 
-global ubicacion   "D:\ANDRES\Documentos\GitHub\IndicadoresStata\Enapres\"
-global dataset     "$ubicacion\dataset" 
-global dofile      "$ubicacion\dofile"
-*--------------------------------------*
-*Porfavor agregue año de inicio y fin: 
-*Ojo: El programa esta diseñado para que descargue sólo los módulos 300 y 500 
-*años entre el 2015 y 2020. 
- 
-global inicio     2015
-global final      2020
-*--------------------------------------*
-
-*Ejecute con Stata versión 13.
-*Sólo si descarga 2015 - corra: 5.-Alerta-2015.do
- 
-do "${dofile}//1.-codigo-encuestas.do"
-do "${dofile}//2.-codigo-modulo.do"
-do "${dofile}//3.-extraccion-zip.do"
-do "${dofile}//4.-colocar-data-en-files.do"
-do "${dofile}//5.-Carpetas atipicas.do"
-
-exit 
 *---------------------------------------------------------------
 *Transformar Bases de datos en Formato STATA
 *---------------------------------------------------------------
 
-	global ubicacion "D:\ANDRES\Documentos\GitHub\IndicadoresStata\Enapres" 
+global ubicacion "D:\ANDRES\Documentos\GitHub\IndicadoresStata\Enapres2" 
+global Inicial   "$ubicacion\dataset\Inicial"
+global excel     "$ubicacion\\excel"
+cd "$Inicial"
 
-	global Inicial "$ubicacion\dataset\Inicial"
+
 
 
 	forvalue i =19/20{
@@ -72,17 +45,9 @@ exit
 
 	}
 
-
-*/
-global ubicacion "D:\ANDRES\Documentos\GitHub\IndicadoresStata\Enapres" 
-global Inicial   "$ubicacion\dataset\Inicial"
-global excel     "$ubicacion\\excel"
-cd "$Inicial"
-
-
 **
 
-/*
+
 use cap_100_2019.dta,clear 
 rename *, lower
 tab p129a
@@ -135,7 +100,7 @@ rename *, lower
 rename p129g p129a
 rename p142a p142 
 saveold cap_100_2020.dta,replace 
-*/
+
 
 
 

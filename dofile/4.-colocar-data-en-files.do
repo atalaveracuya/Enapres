@@ -35,18 +35,18 @@ cd "Download"
 		}
 		}
 		
-/*		*2019 
-cd 	"$ubicacion\dataset\2019\Download\684-Modulo1494\"
-	cap copy "XXX-Modulo105\\CAP_600_URBANO_7.sav" "$Inicial\\CAP_600_2019.sav"
+		*2019 
+*cd 	"$ubicacion\dataset\2019\Download\684-Modulo1494\"
+*	cap copy "XXX-Modulo105\\CAP_600_URBANO_7.sav" "$Inicial\\CAP_600_2019.sav"
 
 		*2020
 				
 cd 	"$ubicacion\dataset\2020\Download\"
-	cap copy "736-Modulo1622\736-Modulo1622\\CAP_600_URBANO_7.sav" "$Inicial\\CAP_600_2020.sav"
+*	cap copy "736-Modulo1622\736-Modulo1622\\CAP_600_URBANO_7.sav" "$Inicial\\CAP_600_2020.sav"
 	
 	cap copy "736-Modulo1618\736-Modulo1618\\CAP_100_URBANO_RURAL_3.sav" "$Inicial\\CAP_100_2020.sav"
 
 	
-cd "$ubicacion\dataset\2016\Download\544-Modulo1076\XXX-Modulo104\"
-		cap copy "CAP_500_URBANO_RURAL.sav" "$Inicial\\CAP_500_2016.sav"
-			*/
+*cd "$ubicacion\dataset\2016\Download\544-Modulo1076\XXX-Modulo104\"
+*		cap copy "CAP_500_URBANO_RURAL.sav" "$Inicial\\CAP_500_2016.sav"
+

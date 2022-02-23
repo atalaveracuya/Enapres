@@ -1,4 +1,4 @@
-/*
+
 *Paso 2: extraccion zip
  * Archivos de SPSS 
 global url 		 "http://iinei.inei.gob.pe/iinei/srienaho/descarga/SPSS"
@@ -29,7 +29,7 @@ forvalues i=$ini/$fin{
 		
 	}
 
-	*/
+	
 /*	http://iinei.inei.gob.pe/iinei/srienaho/descarga/SPSS/495-Modulo699.zip
 
 global url 		 "http://iinei.inei.gob.pe/iinei/srienaho/descarga/SPSS"
